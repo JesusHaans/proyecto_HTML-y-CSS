@@ -4,20 +4,22 @@ body{
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 a{
     text-decoration: none;
     cursor: pointer;
 }
+
 header{
     width: 100%;
     height: 60px;
 }
+
 /* display lfex ayuda a mejorar como acomodamos y posicionamos todos los elementos de  la etiqueta donde estamos poniendo esa propiedad*/
 header nav{
     display: flex;
     justify-content: flex-end;
 }
-
 header nav .nav-right-section{
     width: 250px;
     /* el valor de una propiedad que sea auto lo que se refiere es que use el de su padre inmediato*/
@@ -31,4 +33,40 @@ header nav .nav-right-section{
 nav .nav-right-section a{
     margin-right: 10px;
     color: black;
+}
+nav .nav-right-section .menu-icon{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/162/162740.png);/*Este trae la imagen de cierta URL*/
+    background-repeat: no-repeat;/*Este evita que la imagen se repita para rellenar el contenedor*/
+    background-position: center;/*este centra la imagen en el contenedor*/
+    background-size: contain;/* Este hace que la imagen este del tamaño del contenedor*/
+    width: 25px;
+    height: 25px;
+}
+nav .nav-right-section img{
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+main{
+    margin-top: 100px;
+    text-align: center;
+}
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;/* con auto divide lo que sobra y lo divide entre dos y los pone a la izquierda y derecha*/
+    margin-bottom: 35px;
+}
+main .main-logo img {
+    width: 300px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
 }
